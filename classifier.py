@@ -40,6 +40,7 @@ for i in range(len(x)):
 vocab_size = 5000
 sent_len = 20
 one_hot_encoded = [one_hot(x, vocab_size) for x in corpus]
+
 # pad sequences with 0 to make them even length
 one_hot_encoded = pad_sequences(one_hot_encoded, maxlen=sent_len)
 
